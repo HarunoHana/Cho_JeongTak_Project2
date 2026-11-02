@@ -1,0 +1,25 @@
+D4 Software End User License Agreement (EULA)
+
+1. This is an agreement between Licensor and Licensee, who is being licensed to use of the D4 Software. The Software and License consist of two Components: the Proprietary (closed source) Component, and a Free (open source) Component. All aspects of this license apply to both Components unless stated otherwise.
+
+2. Licensee acknowledges that this is only a limited nonexclusive license for a specific version. Licensor is and remains the owner of all titles, rights, and interests in the Software.
+
+3. This License permits Licensee to install the Software on up to two computers owned by the Licensee, as long as the Software will not be used on more than one computer system simultaneously. Licensee may make copies of the Software or allow copies of the Software to be made by others.
+
+4. RESTRICTIONS IN USE: Licensee shall use the Proprietary Components of the Software strictly in accordance with the terms of this agreement and shall not decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt Proprietary Components. Licensee shall have full freedom to modify and alter Free Components of the Software in accordance with the Creative Commons Attribution 3.0 United States License whose details can be obtained at http://creativecommons.org/licenses/by/3.0/us/.
+
+5. DISCLAIMER OF WARRANTY: THERE IS NO WARRANTY FOR THIS SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE LICENSOR PROVIDES THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. IN THE EVENT LICENSEE IDENTIFIES
+
+6. LIMITATION OF LIABILITY: IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW WILL THE LICENSOR OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE SOFTWARE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF THE LICENSOR OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+7. If the disclaimer of warranty and limitation of liability provided above cannot be given local legal effect according to their terms, reviewing courts shall apply local law that most closely approximates an absolute waiver of all civil liability in connection with the Software, unless a warranty or assumption of liability accompanies a copy of the Program in return for a fee.
+
+8. Licensee agrees to defend and indemnify Licensor and hold Licensor harmless from all claims, losses, damages, complaints, or expenses connected with or resulting from Licensee's business operations.
+
+9. All sales of the software are final. Refunds will be issued upon the request of a Licensee ONLY IF the software has not yet been authorized. Purchased software that has been authorized on at least one computer will not be eligible for a refund.
+
+10. The Software License allows Licensee to obtain minor updates (e.g. Software version 1.1 is considered a minor update from the version 1.0) to the software for free. Each major update (e.g. Software version 2.0 is considered a major update from the version 1.0) may require an upgrade fee to the existing license.
+
+11. This License Agreement is the entire and exclusive agreement between Licensor and Licensee regarding this Software. This License Agreement replaces and supersedes all prior negotiations, dealings, and agreements between Licensor and Licensee regarding this Software.
+
+12. This License Agreement is valid without Licensor's signature. It becomes effective upon the earlier of Licensee's signature or Licensee's use of the Software.

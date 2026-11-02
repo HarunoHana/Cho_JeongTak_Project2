@@ -1,0 +1,189 @@
+D4 Changelog:
+
+09/29/2026 -- version 2.6.1
+Fixed a bug in reading alphanumeric serial on Windows machines which has made it impossible to authorize D4 on recent PCs. Please note installing this version may require issuing a new authorization file for select Windows users.
+
+03/05/2026 -- version 2.6.0
+New version of the D4 that fixes calibration misconfiguration crashes and addresses a long-standing bug dealing with layers with only 2 loudspeakers.
+Refinements to the calibrations, patches, meter UI, and ambeo cell.
+IMPORTANT! Max 9.1.2 has a bug that causes instability when loading VSTs using vst~ object on Windows 11. The bug has been fixed and the fix will be included in the upcoming Max release.
+
+02/24/2026 -- version 2.5.7
+Added IU KIX Lab RTV 100 interim speaker calibration.
+Cleaned up various calibrations and the main example patches.
+Made RTV 100 the default D4.calc~ calibration.
+Replaced Ambeo Orbit on a Mac with dearVR Micro due to Ambeo's incompatibility with the Arm CPU architecture.
+Left Windows plugin on Ambeo Orbit as dearVR Micro has issues reopening on some OS variants and configurations.
+
+01/14/2026 -- version 2.5.6
+Max9 compatible versions with builds for Apple's M and Intel chips and Windows 11 (32-bit and 64-bit).
+Automated OS detection for the binaural plugin.
+
+08/01/2022 -- version 2.5.5
+Added Colorado University Boulder B2 Black Box space calibration and visualization.
+
+04/12/2022 -- version 2.5.4
+Added d4-glob-azim, d4-glob-elev, d4-<context>-azim, and d4-<context>-elev to the D4.player abstraction that allows for controlling global or per-D4.player-instance azimuth and elevation offset. This offset is added to the one rendered through the D4.timeline.editor.
+Added 2nd optional argument to the D4.player that allows disabling of the global azimuth and elevation offset values, so that they do (0, default) or do not (1) affect a particular instance of D4.player.
+Disabled D4.timeline.editor's timer values (they are now read only).
+Expanded documentation and added one version for each OS due to inconsistent positional rendering of links.
+
+03/17/2022 -- version 2.5.3
+Revamped the D4.player abstraction fixing a bug where radius, ramp up, ramp down, and gain values did not update properly. Added additional outlets for easier (optional) patching control of parameters for the D4 object. Added optional argument for automatically setting the bus.
+
+02/15/2022 -- version 2.5.2
+Fixed a bug in the DISIS nofloor variant of the calibration.
+Fixed a bug in D4.meter.monitor.disis where sub locations were inverted.
+
+02/09/2022 -- version 2.5.1
+Added 3rd row of loudspeakers to DISIS loudspeaker calibration patch (regular and nofloor).
+Updated D4.meter.monitor.disis~, resolving a bug and reflecting new row.
+
+01/25/2022 -- Version 2.5.0
+Fixed memory leak when freeing unauthorized version of the external.
+Cleaned formatting of some of the object error reports.
+Provided builds for both 32-bit and 64-bit Windows.
+
+01/17/2022 -- Version 2.4.1
+Fixed preset bugs in the Moogfest demo patch.
+Added binaural version of the Moogfest demo patch.
+Improved instructions on installing the AMBEO plugin inside the D4.calc~-example.binaural patch.
+Improved visual inconsistencies in the D4.Introduction patch and added information on the newly introduced binaural version of the Moogfest demo.
+
+06/08/2021 -- Version 2.4.0
+Introduced binaural mesh (see D4.calc~-example-binaural.maxpat) and supporting abstractions and 2D visualization widget.
+Added D4.introduction.maxpat and other supporting intro/documentation patches to provide step-by-step introduction into D4.
+Cleaned-up existing patches and added supplemental comments.
+Fixed a bug in the D4 external where a single loudspeaker per layer was not correctly affected by the radius value, and other minor bug-fixes.
+Fixed D4.calc~ and D4.calc.poly~ order of execution to minimize potential console errors at instantiation.
+D4.3D.visualizer~ now automatically updates its visual layout whenever the new calibration file is loaded, including opening a new patch that loads the default configuration. It also matches the red/green coloring for regular and solo (sub) layers, respectively.
+Added solar data sonification example (an excerpt that is featured at the beginning of the Traces composition, see https://youtu.be/jPBzkMkQlq4).
+Bunch of other small bug-fixes, patch updates, and documentation improvements.
+
+09/04/2019 -- Version 2.3.1
+Small bug-fixes and versioning update for the externals (from now on they only use major and minor versions, e.g. 2.3, leaving the patch number for Max-only fixes and/or improvements, e.g. 2.3.1)
+Fixed a bug in the D4.sound.loop~ which did not resize the buffer upon opening a new one
+Cleaned-up the Max native external to remove excessive authorization printouts to the Max console
+Potential aliasing problem with groove~ in D4.sound.loop~ and D4.sound.oneshot~ was identified as an upstream problem that is scheduled to be fixed in Max 8.1.1
+
+08/21/2019 -- Version 2.3.0
+Native Max D4 external with optimizations
+New vastly optimized D4.calc.poly~ and a battery of supporting abstractions that mute unused channels. The resulting optimization allowed the D4 to be utilized in a patch with 7,955 signals and 25,337 function calls and with 2,780 virtual channels of audio being mixed down to 130 physical ones, whereas the launch demo in 2014 allowed for 1018 signals and 5103 function calls and approx. 1,000 virtual channels of audio being mixed down to 128, as reported by Max's adstatus
+Created safe defaults for D4.calc~ to make it immediately usable when created
+Simplified D4_med_Matrix.class
+Added Virginia Tech Perform studio visualization and a silent floor calibration option
+Updated Virginia Tech Cube and DISIS calibration with new loudspeakers and added a silent floor option for both
+Added D4.mask.calculator.single.maxpat abstraction which is a version of the same abstraction without threading
+Added example patch D4.sensel&webcam.mask.demo.maxpat that interfaces D4's spatial mask with the Sensel controller and/or webcam to allow for first-of-a-kind interactive spatial audio painting that processes audio with customizable DSP algorithms per audio channel
+Includes java external to interface with the Locus system
+Minor bug-fixes and updates to the abstractions
+Updated 2017 Moogfest demo to compensate for the delay
+Added color customization to the D4.meter.cell~
+Note the D4.ui.widgets.maxpat that offers a simple convenience mixing fader for coordinating multiple stems, including globally-aware solo and mute
+Authorization files now require .txt extension: existing users with D4auth files should rename the files to D4auth.txt
+
+07/11/2019 -- Version 2.2.3
+Minor bug-fixes
+
+09/10/2018 -- Version 2.2.2
+Improved D4.mask.calculator to allow toggling of default mask output that controls amplitude
+Fixed context bug inside the D4.generator.js
+
+08/06/2018 -- Version 2.2.1
+Minor improvements to the D4.cell-mask2phasor~ abstraction
+Added documentation to the per-channel processing D4.calc~-example-custom patch
+
+08/03/2018 -- version 2.2.0
+Introduced custom D4.calc~ outputs for per-channel processing
+Included the Moogfest demo patch with tracks
+Added a mixer strip convenience widget with Solo and Mute functions
+
+05/19/2017 -- version 2.1.2
+Added Moogfest 2017 calibration and visualization
+
+09/14/2016 -- version 2.1.1
+Fixed timeline editor not reporting radius
+Cleaned-up documentation
+
+08/15/2016 -- version 2.1.0
+Added sample sync to D4.timeline.editor and D4.player
+More minor bug-fixes and clean-up
+
+08/13/2016 -- version 2.1.0 Beta 2
+Cleaned up D4.calc~-example
+Renamed "update" message to "refresh"
+Faster framerate on the timeline editor preview
+Minor bug-fixes
+
+08/12/2016 -- version 2.1.0 Beta 1
+Introduced D4.timeline.editor
+Optimizations with ~250% mask editor performance improvement
+Improved internal reinit logic to minimize message traffic for dynamic mask updates
+Renamed abstractions to accurately reflect their purpose (signal vs. non-signal, and scope)
+  D4.mask.player is now D4.player
+  D4.meter.monitor.* are now D4.meter.monitor.*~
+Updated D4.player to support timeline data and the default offset (used to sync multiple players)
+Up- and down-ramp inside D4 are now re-initialized when changing speaker configuration
+Better Bus selection widget
+Improved appearance
+Bug-fixes
+
+07/05/2016 -- version 2.0.6
+Removed "test" bus setting as default from the 3D.visualizer
+Mask player bangs on every mask change, as it should
+Mask renderer now properly renders frames
+Mask renderer now works even if the editor is not present
+Translation of the mask editor moves speakers in sync with the mask
+3D visualizer now dynamically allocates all aspects of monitored channels
+D4.calc~ now dynamically allocates output channels (default 8)
+
+07/02/2016 -- version 2.0.5
+D4_med_matrix UI improvements
+Fixed bug where renderer does not always acknowledge the existence of a frame before storing a new frame
+Made renderer warn when writing session into an existing folder when saving
+Session names that are floats and longs now do not throw a warning
+
+06/24/2016 -- version 2.0.4
+more bug-fixes
+added end command to speaker config
+all the extra messages now require inlet 0
+mask editor now handles channel skips
+updating speaker configuration now automatically updates mask editor as well
+updating speaker configuration now automatically re-applies the mask
+mask editor can be now cleared and filled (C and F keys)
+mask editor can be now used independently of the renderer and renderer disables built-in editor's D4.mask.calculator when present
+TODO: when calculating mask, should subs get a fraction of the overall amplitude?
+
+06/23/2016 -- version 2.0.3
+added automatic med update on setup
+improved documentation
+
+06/22/2016 -- version 2.0.2
+minor bug fixes
+
+06/21/2016 -- version 2.0.1
+added demo mode
+added version announcement on load
+improved documentation
+minor fixes
+
+06/20/2016 -- version 2.0.0
+renamed to D4
+sine-based panning
+null-pointer exception when printing info
+multiple solo layers (e.g. subs)
+
+05/02/2015 -- version 1.2.0
+merged horizontal and vertical into one
+introduced mask and radius
+various optimizations and improvements
+
+04/15/2015 -- version 1.1.0
+improved modular design to support multiple spaces
+minor bug fixes
+
+10/31/2014 -- version 1.0.1
+introduced outletHigh for higher priority
+
+10/29/2014 -- version 1.0
+first version for the mask editor, allowing matrix and meta data bundling
