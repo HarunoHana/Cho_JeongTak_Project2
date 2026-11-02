@@ -4,7 +4,7 @@
 
 - **Assignment2.maxpat** – Main Max patch used to run the project.
 - **sounds-original/** – Contains the original, unedited sound files.
-- **edit & Sound files in the main directory/** – Contains edited sound files used during development.
+- **sounds-edit/ & Sound files in the main directory/** – Contains edited sound files used during development.
 - **Cho_JeongTak_Project2_Documentation** – Project documentation explaining the concept, implementation, and design process.
 
 
